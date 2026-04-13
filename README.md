@@ -17,9 +17,11 @@
 ## 📸 Interface Sneak Peek
 
 <div align="center">
-  <img src="https://via.placeholder.com/800x450/f8f8f8/131313?text=Replace+with+Home+Page+Screenshot" alt="Home Page Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 20px;"/>
+  <img src="public/HomePage.png" alt="Home Page Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 20px;"/>
   <br>
-  <img src="https://via.placeholder.com/800x450/f8f8f8/131313?text=Replace+with+Product+Detail+Screenshot" alt="Product Detail Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);"/>
+  <img src="public/SearchByName.png" alt="Search Results Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 20px;"/>
+  <br>
+  <img src="public/ProductDetail.png" alt="Product Detail Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);"/>
 </div>
 
 ---

@@ -18,14 +18,17 @@ const Navbar = () => {
             setSelectedCategory('');
             setPage(1);
           }}
-          className="flex flex-col group mt-1"
+          className="flex items-center gap-3 group mt-1"
         >
-          <span className="text-2xl font-black tracking-tight text-black leading-none">
-            FoodLens
-          </span>
-          <span className="text-[9px] font-bold text-gray-400 uppercase tracking-[0.2em] font-syncopate mt-0.5 group-hover:text-black transition-colors">
-            Food Facts Explorer
-          </span>
+          <img src="/favicon.svg" alt="FoodLens Logo" className="w-10 h-10 group-hover:scale-105 transition-transform" />
+          <div className="flex flex-col">
+            <span className="text-2xl font-black tracking-tight text-black leading-none">
+              FoodLens
+            </span>
+            <span className="text-[9px] font-bold text-gray-400 uppercase tracking-[0.2em] font-syncopate mt-1 group-hover:text-black transition-colors">
+              Food Facts Explorer
+            </span>
+          </div>
         </Link>
         
         {/* Search Controls */}
