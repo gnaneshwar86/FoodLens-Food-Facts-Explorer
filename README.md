@@ -1,122 +1,182 @@
 <div align="center">
   <img src="public/favicon.svg" alt="FoodLens Logo" width="120"/>
 
-  # FoodLens | Food Facts Explorer
+# FoodLens
 
-  **Discover Pure Ingredients.**<br>
-  A hyper-premium, minimalist React web application designed to instantly surface detailed nutritional data and ingredients analysis via the global *OpenFoodFacts* database.
+### 🔍 Decode What You Eat. Instantly.
 
-  [![React](https://img.shields.io/badge/React-18.x-blue?style=for-the-badge&logo=react)](https://reactjs.org/)
-  [![Vite](https://img.shields.io/badge/Vite-5.x-646CFF?style=for-the-badge&logo=vite)](https://vitejs.dev/)
-  [![Tailwind CSS](https://img.shields.io/badge/Tailwind-4.x-38B2AC?style=for-the-badge&logo=tailwind-css)](https://tailwindcss.com/)
-  [![OpenFoodFacts](https://img.shields.io/badge/OpenFoodFacts-API-FF9900?style=for-the-badge)](https://world.openfoodfacts.org/)
+  <p>
+    A production-grade, minimalist food intelligence platform that transforms raw nutritional data into actionable insights — powered by global datasets and engineered for speed.
+  </p>
+
+🌐 **Live App** → https://foodlens-phi.vercel.app/
+
+  <br/>
+
+  <img src="https://img.shields.io/badge/React-19-blue?style=for-the-badge&logo=react"/>
+  <img src="https://img.shields.io/badge/Vite-6-646CFF?style=for-the-badge&logo=vite"/>
+  <img src="https://img.shields.io/badge/TailwindCSS-4-38B2AC?style=for-the-badge&logo=tailwind-css"/>
+  <img src="https://img.shields.io/badge/API-OpenFoodFacts-FF9900?style=for-the-badge"/>
+
 </div>
 
 ---
 
-## 📸 Interface Sneak Peek
+## 🧠 Why FoodLens?
+
+Most food apps **show data**.
+FoodLens is built to **help you decide**.
+
+> ⚡ From scanning products to analyzing ingredients — everything is optimized for **clarity, speed, and real-world usability**.
+
+---
+
+## ✨ Core Capabilities
+
+### 🔎 Intelligent Search Engine
+
+* Real-time, debounced product search across **3M+ global food items**
+* Optimized query routing for high-accuracy results
+
+### 📦 Barcode Intelligence
+
+* Instant lookup using product barcodes
+* Designed for real-world usage (store, home, comparison)
+
+### 📊 Nutrition Deep Dive
+
+* Macro breakdown (energy, fat, carbs, protein)
+* Ingredient-level inspection with structured rendering
+
+### 🗂️ Smart Category Navigation
+
+* Explore high-density categories (Snacks, Beverages, Chocolates)
+* Efficient caching + pagination strategy
+
+### 🌍 Global Dataset Integration
+
+* Powered by **OpenFoodFacts**
+* Intelligent localization fallback (English-first prioritization)
+
+---
+
+## 🧬 Architecture Highlights
+
+### ⚡ Performance-First Frontend
+
+* **React 19 (Hooks + Functional Architecture)**
+* **Vite 6** → ultra-fast builds + HMR
+* **Tailwind v4** → zero-runtime styling system
+
+### 📡 API Engineering
+
+* Proxy-based request routing for:
+
+  * CORS bypass
+  * Header injection (custom User-Agent)
+* Multi-endpoint orchestration:
+
+  * `/cgi/search.pl` → precision search
+  * `/api/v2/search` → category filtering
+  * `/api/v0/product` → exact product resolution
+
+### 🧠 State Management
+
+* Centralized via Context API (`FilterContext`)
+* Eliminates prop-drilling
+* Enables global reactive UI updates
+
+---
+
+## 🎯 What Makes This Project Stand Out
+
+* 🧠 **Data → Insight Transformation (not just display)**
+* ⚡ **Blazing-fast UX with minimal bundle size**
+* 🎨 **Hyper-minimal premium UI (glassmorphism + typography system)**
+* 🌐 **Production deployment with CDN (Vercel)**
+* 🧩 **Clean, scalable component architecture**
+
+---
+
+## 📸 Product Preview
 
 <div align="center">
-  <img src="public/HomePage.png" alt="Home Page Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 10px;"/>
-  <br>
-  <i><b>Home Page:</b> Displaying dynamic grid of products with sorting controls.</i>
-  <br><br><br>
 
-  <img src="public/SearchByName.png" alt="Search Results Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 10px;"/>
-  <br>
-  <i><b>Search View:</b> Instant debounced filtering fetching localized English product tags.</i>
-  <br><br><br>
+<img src="public/HomePage.png" width="800"/>
 
-  <img src="public/ProductDetail.png" alt="Product Detail Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 10px;"/>
-  <br>
-  <i><b>Nutrition Inspector:</b> Detailed macros breakdown, energy stats, and deep-dive ingredients analysis.</i>
+<i>Dynamic product grid with filtering + pagination</i>
+
+<br/><br/>
+
+<img src="public/SearchByName.png" width="800"/>
+
+<i>Real-time intelligent search experience</i>
+
+<br/><br/>
+
+<img src="public/ProductDetail.png" width="800"/>
+
+<i>Deep nutritional and ingredient analysis</i>
+
 </div>
 
 ---
 
-## ⚡ Key Features
+## 🚀 Getting Started
 
-- 🔎 **Real-time Product Search**: Instant debounced searching against a database of over 3 million food products.
-- 🗂️ **Global Category Filtering**: Browse 30+ highly engaged food categories (Beverages, Snacks, Chocolates, etc.) using direct caching mechanisms.
-- 📸 **Precise Barcode Lookups**: Type any product barcode for direct nutritional analysis and ingredient text breakdown.
-- 🌓 **Premium Light-Mode UI**: A heavily customized stark-white design system utilizing `glassmorphism`, `Syncopate` headers, and `Sen` typography.
-- 🌐 **Anti-CORS Architecture**: Leverages local Vite proxying to cleanly intercept and route API calls, entirely bypassing browser-level CORS errors and throttling blocks.
-- 🌍 **Intelligent Localization**: Automatically prioritizes English-translated database labels for global products, falling back natively when unavailable.
-
----
-
-## 🛠️ Technology Stack
-
-| Technology | Purpose |
-| ---------- | ------- |
-| **React** (Vite) | High-performance frontend rendering & Hot-Module-Replacement. |
-| **TailwindCSS** | Core styling utility, defining entire monochrome aesthetic system. |
-| **Lucide-React** | Minimalist, beautifully proportionate SVG icon set. |
-| **Context API** | Pure React-native global state mechanism (managing search, feeds, loading, and cursors). |
-| **Fetch API** | Asynchronous promise-driven data handling mapped dynamically to custom proxy routes. |
-
----
-
-## 🚀 Quick Start Guide
-
-### Prerequisites
-- Node.js `v18.x` or later.
-- `npm` or `yarn` installed.
-
-### 1. Installation
-Clone the repository and install all dependencies:
 ```bash
 git clone https://github.com/your-username/FoodLens.git
 cd FoodLens
 npm install
-```
-
-### 2. Run the Development Server
-Since the OpenFoodFacts API requires specific headers and throttles generic anonymous browsers, we run all requests through a safe Local Vite Proxy.
-
-Start the app:
-```bash
 npm run dev
 ```
 
-Your server will boot. Open [http://localhost:5173/](http://localhost:5173/) to explore the application!
+---
+
+## ⚠️ Production Note
+
+In development, API requests are routed through a **Vite proxy** to handle:
+
+* CORS restrictions
+* Custom headers
+* API throttling
+
+For production, this should be replaced with **serverless functions (e.g., Vercel API routes)** to ensure reliability and scalability.
 
 ---
 
-## 🔌 API Integration Details
+## 📁 Project Structure
 
-The application consumes data entirely from the **OpenFoodFacts API**.
-
-To guarantee uptime and completely avoid Cross-Origin Resource Sharing (CORS) exceptions, `vite.config.js` acts as an intermediary. 
-- **Product Text Search** (`/cgi/search.pl`): Executed on the legacy core infrastructure to guarantee high-accuracy name hits.
-- **Categorization** (`/api/v2/search`): Routes natively across the faster `.net` architecture using the `categories_tags` query.
-- **Entity Resolution** (`/api/v0/product`): Fetches precise ID-matched datasets.
-
-*A custom un-throttled User-Agent is securely injected server-side to guarantee prioritized request streaming.*
-
----
-
-## 📁 Source Architecture
 ```
 src/
-├── components/          # Reusable view components 
-│   ├── SearchBar.jsx
-│   ├── CategoryFilter.jsx
-│   ├── ProductCard.jsx  # Grid interface components
-│   └── Navbar.jsx       # Persistent reset & layout binding
+├── components/
 ├── pages/
-│   ├── HomePage.jsx             # The master list and dynamic paginator
-│   └── ProductDetailPage.jsx    # Deep-dive nutritional tabular pages
 ├── context/
-│   └── FilterContext.jsx        # App-wide global state registry
 ├── utils/
-│   └── api.js                   # Primary promise-wrapper for OpenFoodFacts
-├── App.jsx                      # Primary React Router bindings
-└── index.css                    # Tailwind Directives and CSS-Variable System
+├── App.jsx
+└── index.css
 ```
+
+---
+
+## 🧭 Future Roadmap (Top 1% Upgrades)
+
+* 🟢 Health Score Engine (AI-like food grading)
+* ⚠️ Ingredient Risk Detection
+* ⚖️ Product Comparison Tool
+* 📷 Live Barcode Scanner (Camera API)
+* 🧠 Smart Query Search (“high protein low sugar snacks”)
+
+---
+
+## 🏁 Final Thought
+
+> FoodLens is not just a UI project —
+> it's a **foundation for intelligent food decision systems**.
 
 ---
 
 <div align="center">
-  <i>Engineered for the 1% Web Aesthetic | Minimal. Bold. Functional.</i>
+  <b>Engineered for the Top 1%</b><br/>
+  Minimal. Fast. Intentional.
 </div>
