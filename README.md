@@ -17,11 +17,19 @@
 ## 📸 Interface Sneak Peek
 
 <div align="center">
-  <img src="public/HomePage.png" alt="Home Page Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 20px;"/>
+  <img src="public/HomePage.png" alt="Home Page Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 10px;"/>
   <br>
-  <img src="public/SearchByName.png" alt="Search Results Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 20px;"/>
+  <i><b>Home Page:</b> Displaying dynamic grid of products with sorting controls.</i>
+  <br><br><br>
+
+  <img src="public/SearchByName.png" alt="Search Results Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 10px;"/>
   <br>
-  <img src="public/ProductDetail.png" alt="Product Detail Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);"/>
+  <i><b>Search View:</b> Instant debounced filtering fetching localized English product tags.</i>
+  <br><br><br>
+
+  <img src="public/ProductDetail.png" alt="Product Detail Preview" width="800" style="border-radius: 12px; box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05); margin-bottom: 10px;"/>
+  <br>
+  <i><b>Nutrition Inspector:</b> Detailed macros breakdown, energy stats, and deep-dive ingredients analysis.</i>
 </div>
 
 ---
