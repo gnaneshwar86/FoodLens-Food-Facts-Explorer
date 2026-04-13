@@ -1,0 +1,16 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "https://world.openfoodfacts.net/api/:match*"
+    },
+    {
+      "source": "/cgi/:match*",
+      "destination": "https://world.openfoodfacts.net/cgi/:match*"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
