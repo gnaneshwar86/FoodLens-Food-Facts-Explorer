@@ -1,0 +1,9 @@
+/* App basic overrides */
+.App {
+  width: 100%;
+}
+
+::selection {
+  background: white;
+  color: black;
+}
